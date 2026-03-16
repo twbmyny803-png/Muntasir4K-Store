@@ -16,24 +16,26 @@ padding:20px;
 
 h1{
 color:#FFD700;
+font-size:40px;
 }
 
 .container{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
-margin-top:30px;
+margin-top:40px;
 }
 
 .card{
 background:#1e293b;
-padding:20px;
+padding:25px;
 border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,0.4);
+box-shadow:0 0 20px rgba(0,0,0,0.6);
+transition:0.3s;
 }
 
-.card h2{
-color:#00ffff;
+.card:hover{
+transform:scale(1.05);
 }
 
 .price{
@@ -41,34 +43,27 @@ color:#FFD700;
 font-size:20px;
 }
 
-.buttons{
-margin-top:30px;
+.btn{
+padding:15px 25px;
+border-radius:10px;
+text-decoration:none;
+font-size:18px;
+margin:10px;
+display:inline-block;
 }
 
 .whatsapp{
 background:#25D366;
 color:white;
-padding:15px 25px;
-border:none;
-border-radius:10px;
-font-size:18px;
-text-decoration:none;
-margin:10px;
-display:inline-block;
 }
 
 .group{
 background:#5865F2;
 color:white;
-padding:15px 25px;
-border-radius:10px;
-font-size:18px;
-text-decoration:none;
-margin:10px;
-display:inline-block;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -85,13 +80,13 @@ display:inline-block;
 </div>
 
 <div class="card">
-<h2>🧠 ChatGPT Plus</h2>
+<h2>🤖 Gemini Pro</h2>
 <p>اشتراك شهر</p>
 <p class="price">20,000 SDG</p>
 </div>
 
 <div class="card">
-<h2>🤖 Gemini Pro</h2>
+<h2>🧠 ChatGPT Plus</h2>
 <p>اشتراك شهر</p>
 <p class="price">20,000 SDG</p>
 </div>
@@ -104,12 +99,12 @@ display:inline-block;
 
 <div class="card">
 <h2>🎨 Adobe Creative Cloud</h2>
-<p>تفعيل رسمي على إيميلك</p>
+<p>تفعيل رسمي</p>
 </div>
 
 <div class="card">
 <h2>📧 ايميل جامعي</h2>
-<p>تفعيل ايميل تعليمي</p>
+<p>تفعيل بريد جامعي</p>
 </div>
 
 <div class="card">
@@ -120,17 +115,15 @@ display:inline-block;
 
 </div>
 
-<div class="buttons">
+<br><br>
 
-<a class="whatsapp" href="https://wa.me/249925311270">
+<a class="btn whatsapp" href="https://wa.me/249925311270">
 📲 تواصل عبر واتساب
 </a>
 
-<a class="group" href="https://chat.whatsapp.com/E921Ub4mHRPEsF0xuT9IdH?mode=hqctcla">
-👥 مجموعة الواتساب
+<a class="btn group" href="https://chat.whatsapp.com/E921Ub4mHRPEsF0xuT9IdH">
+👥 مجموعة واتساب
 </a>
-
-</div>
 
 </body>
 </html>
